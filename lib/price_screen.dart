@@ -32,7 +32,7 @@ class _PriceScreenState extends State<PriceScreen> {
     }
 
     CupertinoPicker getiOSDropdown() {
-      CupertinoPicker(
+      return CupertinoPicker(
           backgroundColor: Colors.lightBlue,
           itemExtent: 32.0,
           onSelectedItemChanged: (index) {
