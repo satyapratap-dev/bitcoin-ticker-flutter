@@ -33,15 +33,14 @@ class _PriceScreenState extends State<PriceScreen> {
 
     CupertinoPicker getiOSDropdown() {
       CupertinoPicker(
-          itemExtent: 30.0,
+          backgroundColor: Colors.lightBlue,
+          itemExtent: 32.0,
           onSelectedItemChanged: (index) {
             print(index);
           },
-          children: currenciesList.map(
-            (String value) {
-              return Text(value);
-            },
-          ).toList());
+          children: currenciesList.map((String value) {
+            return Text(value);
+          }).toList());
     }
 
     return Scaffold(
