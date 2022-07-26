@@ -47,6 +47,7 @@ class _PriceScreenState extends State<PriceScreen> {
             padding: EdgeInsets.only(bottom: 30.0),
             color: Colors.lightBlue,
             child: DropdownButton(
+              dropdownColor: Colors.red,
               value: selectedCurrency,
               items: currenciesList.map((String value) {
                 return DropdownMenuItem<String>(
